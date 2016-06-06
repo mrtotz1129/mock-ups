@@ -14,367 +14,306 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <!-- Custom Fonts -->
-    <!--link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'-->
-    <!--link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'-->
+    <!-- Custom Fonts --> 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <!--link rel="stylesheet" href="css/animate.min.css" type="text/css"-->
-
-    <!-- Custom CSS -->
+ 
     <link rel="stylesheet" href="includes/themes/cardinal123.min.css" />
     <link rel="stylesheet" href="includes/jquery.mobile-1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
     <link rel="stylesheet" href="includes/cssoverrides.css" />
-    <!--link rel="stylesheet" href="css/creative.css" type="text/css"-->
+    <link rel="stylesheet" href="css/creative.css" type="text/css"-->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"> </script>
     <script src="includes/jquery-1.7.2.min.js"></script>
-    <script src="includes/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
-
-    
-   
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="includes/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script> 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  	<!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script-->
-  	<!-- dropdown -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
 <style>
-{
-    
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+} 
+h1 {
+    color: red; 
+}
+p.italic {
+    font-style: italic;
+}
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #a4001d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #a4001d;
+}
+/* Center the image and position the close button */
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;  /*Enable scroll if needed */
+    background-color: rgb(164,0,29); /* Fallback color */
+    background-color: rgba(164,0,29,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #a4001d;
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}   
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}   
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+    span.psw {
+       display: block;
+       float: none;
+    } 
+.cancelbtn {
+       width: 50%;
+    }   
 }
 </style>
-</head>
-
-<body>
-
-    <!--nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid"-->
+</head> 
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <!--div class="navbar-header">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
-            </div-->
-
+                </button> 
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"-->
-                <!--ul class="nav navbar-nav navbar-right"-->
-                    <!--li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li-->
-                    <!--li>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li>
                         <a class="page-scroll" href="#services">Services</a>
-                    </li-->
-                    <!--li>
-                        <a class="page-scroll" href="#patientguide">Patient Guide</a>
-                    </li-->
-                    <!--li>
+                    </li> 
+                    <li>
                         <a class="page-scroll" href="#labresultsonline">Lab Results Online</a>
-                    </li-->
-                    <!--li>
-                        <a class="page-scroll" href="#portfolio">Cardinal Medical Charities Foundation, Inc.</a>
-                    </li-->
-                    <!--li>
+                    </li> 
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li-->
-                <!--/ul-->
-            <!--/div-->
-            <!-- /.navbar-collapse -->
-        <!--/div-->
-        <!-- /.container-fluid -->
-    <!--/nav>
-    <div class="container">
+                    </li>
+                </ul>
+            </div>  
+        </div> 
+    </nav>
+    <body>
+        <div class="bg-dark">    
+            <div class="container"> 
+                <div class="col-lg-4 col-md-8 text-center">
+                    <br>
+                    <br>
+                    <h1>Clinical Departments</h1> 
+                    <p class="italic">Cardinal Santos Medical Center prides itself on providing intelligent medical care. Through CSMC’s Continuing Medical Education programs, we continually expand the knowledge and expertise of our medical professionals.</p> 
+                    
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                          </ol> 
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/clinical/11.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/clinical/22.png" class="img-responsive" alt=""> 
+                                </div> 
+                                <div class="item">
+                                    <img src="img/clinical/33.png" class="img-responsive" alt="">
+                                </div>
 
-
-
-        <div class="row">
-
-
-
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><center><h2>Clinical Departments</h2></center></div>
-                        <div class="panel-body">
-                            <div class="col-md-8"-->
-                         
-                                <!--div data-role="page" id="pageone">
-                                    <div data-role="header">
-                                        <h1>Clinical Departments Service Directory</h1>
-                                    </div>
-                                    <div data-role="main" class="ui-content">
-                                        <p>Choose within these services:</p>
-                                            <ul>
-                                            <li>
-                                                <a href="#pagetwo" data-transition="slide">Clinical Departments</a>
-                                            </li>
-                                    </div>
-
-                                    <div data-role="footer">
-                                        <h1>Footer Text</h1>
-                                    </div>
-                                </div--> 
-                            
-<div data-role="page" id="pagetwo">
-<div data-role="header">
-<h1>Clinical Departments</h1>
-</div>
-<div data-role="collapsible-set">
-<div data-role="collapsible">
-<h1>Anesthesiology</h1>
-<b>Our practice emphasizes patient safety as well as the highest level of skill in the science and art of Anesthesia. We believe in employing best practices in the delivery of our services.</b></br>
-<br>
-<b>Schedule:</b></br>
-<p> On Call</p>
-<b>Room:</b></br>
-<p>374</p>
-<b>Doctor's Name:</b></br>
-Legaspi, Ferdie B.</br>
-Martinez, Vicente</br>
-Mendoza, Michael</br>
-Pilarta, Napoleon</br>
-</div>
-<div data-role="collapsible">
-<h1>Dental Medecine</h1>
-<b>The Department of Dental Medicine of Cardinal Santos Medical Center will definitely make you smile. It offers comprehensive dental services and is fully dedicated to the patient’s comfort and satisfaction. It offers:</b><br>
-<li>General Dentistry</li>
-<li>Cosmetic Dentistry</li>
-<li>Endodontics (root canal therapy)</li>
-<li>Prosthodontics (dentures and bridges)</li>
-<li>Pediatric Dentistry</li>
-<li>Periodontics (diseases of the gums and supporting tissues)</li>
-<li>Oral implants and oral surgery</li>
-<li>Orthodontics</li>
-<br>
-<b>Doctor's Name:</b></br>
-Resurreccion, Alma S.</br>
-<b>Specialty:</b></br>
-General Dentistry</br>
-<b>Schedule:</b></br>
-MWF 9-12; 1-5 pm /Th 3-6 pm/S 9 am-12 nn</br>
-<b>Room:</b></br>
-<p>125</p>
-<b>Doctor's Name:</b></br>
-Resurreccion, Raul SL.</br>
-<b>Specialty:</b></br>
-General Dentistry and Orthodontics</br>
-<b>Schedule:</b></br>
-MWF 9-12; 1-5 pm /Th 3-6 pm/S 9 am-12 nn</br>
-<b>Room:</b></br>
-<p>125</p>
-<b>Doctor's Name:</b></br>
-Eufemio, Ma. Nelda V.</br>
-<b>Specialty:</b></br>
-Cosmetic Restorative Dentistry</br>
-<b>Schedule:</b></br>
-TThS 11 am-3:30 pm</br>
-<b>Room:</b></br>
-<p>253</p>
-<b>Doctor's Name:</b></br>
-Torres, Fidel Emmanuel R.</br>
-<b>Specialty:</b></br>
-General Dentistry</br>
-<b>Schedule:</b></br>
-M to S 9 am-6 pm By Appt.</br>
-<b>Room:</b></br>
-<p>473</p>
-<b>Doctor's Name:</b></br>
-Torres, Maria Asuncion S.</br>
-<b>Specialty:</b></br>
-General Dentistry</br>
-<b>Schedule:</b></br>
-M to S 9 am-6 pm By Appt.</br>
-<b>Room:</b></br>
-<p>473</p>
-<b>Doctor's Name:</b></br>
-Dimanlig, Anna Maria C.</br>
-<b>Specialty:</b></br>
-Pediatics Dentistry</br>
-<b>Schedule:</b></br>
-WTh 2-6 pm / S 8 am-12 nn</br>
-<b>Room:</b></br>
-<p>479</p>
-</div>
-<div data-role="collapsible">
-<h1>Emergency Medicine</h1>
-<p>The Cardinal Santos Medical Center Emergency Room is under the auspices of the Department of Emergency Medicine.</p>
-<p>Led by top Philippine emergency medicine specialists, the Emergency Department Team of well-trained medical professionals is well equipped to provide emergent care to distressed patients, even those suffering from trauma and critical illness, any time of any day, 24/7. You can be sure of prompt and personal care and attention that any patient, young or old, critical or non-critical, deserves.</p>
-<p><strong>For further details, please call (02) 727-0052 and we will be glad to assist you.</strong></p>       
-</div>
-
-<div data-role="collapsible">     
-<h1>Internal Medicine</h1>
-<p>Cardinal Santos Medical Center is the preferred place of practice of some of the Philippines’ top practitioners in Internal Medicine. These specialists provide expert care for work-related conditions and injuries. They provide expertise in the prevention of such conditions to promote optimal health and safety in the workplace so you can come home at your best.</p>
-<p>The largest among the medical departments, the Department of Internal Medicine is composed of over 300 of the Philippines’ top specialists dealing with non-surgical diseases among adolescents and adults. It encompasses the following disciplines:</p>
-
-<li>Allergy and Immunology</li>
-<li>Cardiology</li>
-<li>Dermatology</li>
-<li>Endocrinology and Diabetology</li>
-<li>Gastroenterology and Gastrointestinal Endoscopy</li>
-<li>General Internal Medicine</li>
-<li>Geriatric Medicine</li>
-<li>Hematology</li>
-<li>Infectious Diseases and Infection Control and Prevention</li>
-<li>Medical Oncology</li>
-<li>Nephrology and Hemodialysis</li>
-<li>Neurology</li>
-<li>Pulmonology</li>
-<li>Psychiatry</li>
-<li>Rheumatology</li>
-<li>Toxicology and Pharmacology</li></br>
-
-<b>Doctor's Name:</b></br>
-Canonigo, Emiliano Jr. B.</br>
-<b>Department:</b></br>
-Internal Medicine-Caridiology</br>
-<b>Schedule:</b></br>
-TTh 2-4 pm / S 10 am-12 nn</br>
-<b>Room:</b></br>
-<p>101</p>
-
-<b>Doctor's Name:</b></br>
-Collado, Marianne P.</br>
-<b>Department:</b></br>
-Internal Medicine-Caridiology</br>
-<b>Schedule:</b></br>
-MWF 1:30 - 3:30 pm</br>
-<b>Room:</b></br>
-<p>101</p>
-
-<b>Doctor's Name:</b></br>
-Collado, Marianne P.</br>
-<b>Department:</b></br>
-Internal Medicine-Caridiology</br>
-<b>Schedule:</b></br>
-MWF 1:30 - 3:30 pm</br>
-<b>Room:</b></br>
-<p>101</p>
-
-<p><strong>Contact Numbers: </strong><br>
-727-0001 Local 4210 &amp; 4211</p>
-<p>Cardio-Neuro 727-0001 Locals 4212 &amp; 4213<br>
-Pulmo: 727-0001 Locals 4210 &amp; 4211</p>
-</div>
-<div data-role="collapsible">
-<h1>Women’s Care</h1>
-<p>The Cardinal Santos Medical Center Women's Care is designed as a one-stop hub for various out-patient procedures and services especially catered to women. The unit provides women the necessary care needed to maintain good health and fitness.</p>
-<p><strong>Operating Hours:</strong></p>
-<p>Monday to Saturday<br>
-8:00AM to 5:00PM</p>
-<p><strong>Contact Number:</strong> <br>
-(+632) 727-0001 Local 3705 </p>
-</div>
-<div data-role="collapsible">
-<h1>Endoscopy Unit</h1>
-<p>The Endoscopy Unit of Cardinal Santos Medical Center is dedicated to the assessment and treatment of the interior surfaces of the gastrointestinal tract through endoscopy. Minimal invasive techniques through allows for shorter hospital stay and the absence of surgical scars.</p>
-<p><strong>Operating Hours:</strong><br>
-Monday to Friday<br>
-7:00AM to 5:00PM</p>
-<p>Saturday<br>
-7:00Am to 3:00PM</p>
-<p><strong>Contact Numbers:</strong><br>
-727-0001 Local 4208<br>
-Direct Line (+632) 725-3173</p>
-</div>
-<div data-role="collapsible">
-<h1>Eye Center</h1>
-<p>The CSMC Eye Center offers expertise in multiple eye specialties for diagnosing and treating eye diseases. <br>
-<strong>Operating Hours:</strong><br>
-Monday to Friday<br>
-8:00AM to 5:00PM</p>
-<p>Saturday<br>
-7:00AM to 3:00PM</p>
-<p><strong>Contact Number:</strong><br>
-727-0001 Local 4113</p>
-    <img src="images/diagnostic/EyeCenter.jpg" width="250px"></img>
-</div>
-<div data-role="collapsible">
-<h1>Hemodialysis</h1> 
-<p>The Hemodialysis specializes in caring for patients with kidney failure and those who need renal replacement therapy. The hemodialysis team aims to ensure utmost comfort and safety for its patients.</p>
-<p><strong>Operating Hours:</strong><br>
-Monday to Saturday<br>
-6:00AM to 6:00PM</p>
-<p><strong>Contact Numbers:</strong> <br>
-727-0001 Local 4206<br>
-Direct Line (+632) 725-3271</p>
-    <img src="images/diagnostic/Hemodialysis.jpg" width="250px"></img>
-</div>
-<div data-role="collapsible">
-<h1>Laboratory</h1>
-<p>The Laboratory Department is equipped with up-to-date laboratory equipment for fast and accurate results.<br>
-<br>
-Open 24hrs Daily</p>
-<p><strong>Contact Number: </strong><br>
-727-0001 Local 4013</p> 
-<img src="images/diagnostic/PathologyandLaboratory.jpg" width="250px"></img>
-</div>
-<div data-role="collapsible">
-<h1>Pharmacy </h1>
-<p>The Pharmacy Department is responsible in providing optimal pharmaceutical care to patients with 24-hour service.<br>
-<br>
-<strong>Contact Numbers:</strong><br>
-727-0001 local 4108 and 4109<br>
-Direct Line:&nbsp; 722-9201</p>
-<p> 
-<img src="images/diagnostic/PharmacyUnit.jpg" width="250px"></img>
-</div>
-<div data-role="collapsible">
-</h1>Radiology</h1>
-<p>The Radiology Department offers a wide range of radiological procedures, using state-of-the-art imaging technology and performed by well-trained technologists, nurses and radiologists to ensure accuracy and safety of procedures.</p>
-<p><strong>Contact Numbers:</strong><br>
-Direct Line: (+632) 727-5793<br>
-727-0001 Local 4204</p>
-<img src="images/diagnostic/RadiologyDepartment.jpg" width="250px"></img>   
-</div>
-<div data-role="collapsible">
-<h1>Rehabilitation Medicine</h1>
-<p>The Department of Rehabilitation Medicine specializes in treating neck and low back pain, tendonitis and arthritis; work and sports-related injuries; patients recovering from stroke; brain and spinal cord injury; patients rehabilitating from joint replacement surgery, among others.</p>
-<p><strong>Operating hours:</strong></p>
-<p>Monday to Friday<br>
-7:00AM to 7:00PM</p>
-<p>Saturday<br>
-7:00Am to 5:00PM</p>
-<p><strong>Contact Numbers: </strong> <br>
-727-0001 Local 4111<br>
-Telefax: (+632) 725-3167</p>
-</div>
-<div data-role="collapsible">
-<h1>Stone Center</h1>
-<p>The Stone Center also offers specialized, minimally invasive urologic surgeries with minimal or no skin incisions.</p>
-<p><strong>Operating Hours</strong><br>
-Monday to Friday<br>
-8:00AM to 3:00PM</p>
-<p><strong>Contact Number:</strong><br>
-727-0001 Local 4114</p>     
-</div>
-</div>
-                                    <div data-role="main" class="ui-content">
-                                        <!--a href="#pageone">Go Back to Clinical Departments Service Directory</a-->
-                                        <button onclick="goBack()">Home</button>
-                                        <script>
-                                            function goBack(){
-                                                window.history.back();
-                                            }
-                                        </script>
-                                        <!--a href="sample.html" class="button">Home</a-->
-                                             
-                                    </div>
-
-                                    <!--div data-role="footer">
-                                        <h1>Footer Text</h1>
-                                    </div-->
-
+                            <div class="item">
+                                <img src="img/clinical/44.png" class="img-responsive" alt="">
+                            </div>
+                          </div> 
+                        </div>             
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h1>Anesthesiology</h1>
+                        <b>Our practice emphasizes patient safety as well as the highest level of skill in the science and art of Anesthesia. We believe in employing best practices in the delivery of our services.</b></br> 
+                </div>
+                <div data-role="collapsible">
+                    <h1>Dental Medecine</h1>
+                        <b>The Department of Dental Medicine of Cardinal Santos Medical Center will definitely make you smile. It offers comprehensive dental services and is fully dedicated to the patient’s comfort and satisfaction. It offers:</b><br>
+                        <li>General Dentistry</li>
+                        <li>Cosmetic Dentistry</li>
+                        <li>Endodontics (root canal therapy)</li>
+                        <li>Prosthodontics (dentures and bridges)</li>
+                        <li>Pediatric Dentistry</li>
+                        <li>Periodontics (diseases of the gums and supporting tissues)</li>
+                        <li>Oral implants and oral surgery</li>
+                        <li>Orthodontics</li> 
+                </div>
+                <div data-role="collapsible">
+                    <h1>Emergency Medicine</h1>
+                        <p>The Cardinal Santos Medical Center Emergency Room is under the auspices of the Department of Emergency Medicine.</p>
+                        <p>Led by top Philippine emergency medicine specialists, the Emergency Department Team of well-trained medical professionals is well equipped to provide emergent care to distressed patients, even those suffering from trauma and critical illness, any time of any day, 24/7. You can be sure of prompt and personal care and attention that any patient, young or old, critical or non-critical, deserves.</p>
+                        <p><strong>For further details, please call (02) 727-0052 and we will be glad to assist you.</strong></p>       
+                </div> 
+                <div data-role="collapsible">     
+                    <h1>Internal Medicine</h1>
+                        <p>Cardinal Santos Medical Center is the preferred place of practice of some of the Philippines’ top practitioners in Internal Medicine. These specialists provide expert care for work-related conditions and injuries. They provide expertise in the prevention of such conditions to promote optimal health and safety in the workplace so you can come home at your best.</p>
+                        <p>The largest among the medical departments, the Department of Internal Medicine is composed of over 300 of the Philippines’ top specialists dealing with non-surgical diseases among adolescents and adults. It encompasses the following disciplines:</p> 
+                        <li>Allergy and Immunology</li>
+                        <li>Cardiology</li>
+                        <li>Dermatology</li>
+                        <li>Endocrinology and Diabetology</li>
+                        <li>Gastroenterology and Gastrointestinal Endoscopy</li>
+                        <li>General Internal Medicine</li>
+                        <li>Geriatric Medicine</li>
+                        <li>Hematology</li>
+                        <li>Infectious Diseases and Infection Control and Prevention</li>
+                        <li>Medical Oncology</li>
+                        <li>Nephrology and Hemodialysis</li>
+                        <li>Neurology</li>
+                        <li>Pulmonology</li>
+                        <li>Psychiatry</li>
+                        <li>Rheumatology</li>
+                        <li>Toxicology and Pharmacology</li></br> 
+                </div>
+                <div data-role="collapsible">
+                    <h1>Women’s Care</h1>
+                        <p>The Cardinal Santos Medical Center Women's Care is designed as a one-stop hub for various out-patient procedures and services especially catered to women. The unit provides women the necessary care needed to maintain good health and fitness.</p>  
+                </div>
+                <div data-role="collapsible">
+                    <h1>Endoscopy Unit</h1>
+                        <p>The Endoscopy Unit of Cardinal Santos Medical Center is dedicated to the assessment and treatment of the interior surfaces of the gastrointestinal tract through endoscopy. Minimal invasive techniques through allows for shorter hospital stay and the absence of surgical scars.</p> 
+                </div>
+                <div data-role="collapsible">
+                    <h1>Eye Center</h1>
+                        <p>The CSMC Eye Center offers expertise in multiple eye specialties for diagnosing and treating eye diseases. <br>
+                        <img src="images/diagnostic/EyeCenter.jpg" width="250px"></img>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Hemodialysis</h1> 
+                        <p>The Hemodialysis specializes in caring for patients with kidney failure and those who need renal replacement therapy. The hemodialysis team aims to ensure utmost comfort and safety for its patients.</p>
+                        <img src="images/diagnostic/Hemodialysis.jpg" width="250px"></img>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Laboratory</h1>
+                        <p>The Laboratory Department is equipped with up-to-date laboratory equipment for fast and accurate results.<br>
+                        <img src="images/diagnostic/PathologyandLaboratory.jpg" width="250px"></img>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Pharmacy </h1>
+                        <p>The Pharmacy Department is responsible in providing optimal pharmaceutical care to patients with 24-hour service.<br>
+                        <img src="images/diagnostic/PharmacyUnit.jpg" width="250px"></img>
+                </div>
+                <div data-role="collapsible">
+                    </h1>Radiology</h1>
+                        <p>The Radiology Department offers a wide range of radiological procedures, using state-of-the-art imaging technology and performed by well-trained technologists, nurses and radiologists to ensure accuracy and safety of procedures.</p>
+                        <img src="images/diagnostic/RadiologyDepartment.jpg" width="250px"></img>   
+                    </div>
+                <div data-role="collapsible">
+                    <h1>Rehabilitation Medicine</h1>
+                        <p>The Department of Rehabilitation Medicine specializes in treating neck and low back pain, tendonitis and arthritis; work and sports-related injuries; patients recovering from stroke; brain and spinal cord injury; patients rehabilitating from joint replacement surgery, among others.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Stone Center</h1>
+                        <p>The Stone Center also offers specialized, minimally invasive urologic surgeries with minimal or no skin incisions.</p> 
+                </div>
+            </div>
+        </div>    
+    <div data-role="main" class="ui-content">
+        <button onclick="goBack()">Go Back</button>
+            <script>
+                function goBack() {
+                window.history.back();
+            </script>      
+    </div>  
+</script>
 </body>
 </html>

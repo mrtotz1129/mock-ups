@@ -26,21 +26,11 @@
     <link rel="stylesheet" href="includes/themes/cardinal123.min.css" />
     <link rel="stylesheet" href="includes/jquery.mobile-1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
     <link rel="stylesheet" href="includes/cssoverrides.css" />
-    <!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"-->
-    <!--script src="http://code.jquery.com/jquery-1.11.3.min.js"></script-->
-    <!--script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
-    <!--script src="http://code.jquery.com/jquery-1.11.3.min.js"></script-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script-->
+ 
 <style>
 /* Full-width input fields */
 input[type=text] {
-    width: 100%;
+    width: 100%; 
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -52,13 +42,18 @@ input[type=text] {
 button {
     background-color: #a4001d;
     color: white;
-    padding: 14px 20px;
+    padding: 12px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 50%;
 }
 /* Extra styles for the cancel button */
+.submitbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #a4001d;
+}
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
@@ -150,22 +145,13 @@ span.psw {
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <!--li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li-->
+                <ul class="nav navbar-nav navbar-right"> 
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <!--li>
-                        <a class="page-scroll" href="#patientguide">Patient Guide</a>
-                    </li-->
+                    </li> 
                     <li>
                         <a class="page-scroll" href="#labresultsonline">Lab Results Online</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">News</a>
-                    </li>
+                    </li> 
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -175,40 +161,17 @@ span.psw {
         </div>
         <!-- /.container-fluid -->
     </nav>
-    </div>
-
+    </div> 
     <header>
         <div class="header-content">
             <div class="header-content-inner">
             	<!--img class="img-responsive" src="header.jpg"-->
                 <h1>Cardinal Santos Medical Center</h1>
-                <hr>
-                <!--p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p-->
+                <hr> 
                 <a href="#services" class="btn btn-primary btn-xl page-scroll" >Find Out More</a>
             </div>
         </div>
-    </header>
-
-    <!--section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Welcome!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl" onclick = "aFunction()">About Us</a>
-                    	<script>
-                    	function aFunction()
-                    	{
-                    		window.open("http://cardinalsantos.com.ph/about-us/profile-history-mission-and-vision/");
-                    	}
-                     	</script>
-
-                </div>
-            </div>
-        </div>
-    </section-->
-  
+    </header>  
     <div class="bg-dark" id="services">
         <div class="container">
             <div class="row">
@@ -224,37 +187,7 @@ span.psw {
                     <div class="service-box">
                         <i class="fa fa-4x fa-doctor wow bounceIn text-primary"></i>
                         <h3>Clinical Departments</h3>
-                            <a href="clinical%20departments.html" class="btn btn-default btn-xl">View</a>
-                            
-                        	<!--div class ="page" id = "services">
-                        		<ul data-role ="listview" data-inset="true">
-                        			<li><a href="#viewservices" class="btn btn-default btn-xl" data-transition="slide">View</a></li>
-                        		</ul>
-                        	</div>
-                        	<div class ="page" id="viewservices">
-                        		<ul data-role="listview" data-inset="true">
-                        			<li><a href="#services" class="btn btn-default btn-x1" data-transition="slide">Home</a></li>
-                        		</ul>
-                        		
-                        	</div--> 
-
-                        	<!--div class="dropdown">
-    							<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">View All
-    							<span class="caret"></span></button>
-   							 	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-   							 		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Anesthesiology</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dental Medicine</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ophthalmology</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Emergency Medicine</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Internal Medicine</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Obstetrics and Gynecology</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pathology</a></li>     
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pediatrics</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Radiology</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rehabilitation Medicine</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Surgery</a></li>  
-    							</ul>
-  							</div-->
+                            <a href="clinical%20departments.html" class="btn btn-default btn-xl">View</a> 
                     </div>
                 </div>
 
@@ -262,214 +195,125 @@ span.psw {
                     <div class="service-box">
                         <i class="fa fa-4x fa- wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Diagnostic And Therapeutic Services</h3>
-                            <a href="diagnostics%20and%20therapeutic.html" class="btn btn-default btn-xl" >View</a>
-                        
-                        	<!--div class="dropdown">
-    							<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">View All
-    							<span class="caret"></span></button>
-   							 	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-   							 		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bone Densitometry</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cancer Center</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cardiac Cathetherization Laboratory</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cardinal on Wheels</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cardio-Neuro-Pulmonary</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Comprehensive Women's Care</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dietery Services</a></li>     
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Endoscopy</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eye Center</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hand Center</a></li> 
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hemodialysis</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lactation Room Service</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pathology and Laboratory</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pharmacy</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Radiology</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rehabilitation Medicine</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Research Center</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Urology and Stone Center</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Wellness Center</a></li>  
-    							</ul>
-  							</div-->
+                            <a href="diagnostics%20and%20therapeutic.html" class="btn btn-default btn-xl" >View</a> 
                     </div>
-                </div>
-
+                </div> 
                 <div class="col-lg-4 col-md-8 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa- wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Special Services</h3>
-                            <a href="special%20services.html" class="btn btn-default btn-xl" >View</a>
-                            
-                        	<!--div class="dropdown">
-    							<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">View All
-    							<span class="caret"></span></button>
-   							 	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-   							 		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Marine Medical Services</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cardinal MRI</a></li>
-      								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Philippine Gamma Knife</a></li>
-    							</ul>
-  							</div-->
+                            <a href="special%20services.html" class="btn btn-default btn-xl" >View</a> 
                     </div>
-                </div>
-                <!--div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa- wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Other..</h3>
-                        <p class="text-muted"></p>
-                    </div>
-                </div-->
+                </div> 
             </div>
         </div>
-    </div>
-
-
-      <!--section class="bg-primary" id="patientguide">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Type here what you want to know:</h2>
-                    	<form>
-                    		Search:<br>
-  							<input type="text" name="firstname">
-  							<a href="#" class="btn btn-default btn-xl">Go</a>
-  							<br>
-  						</form>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-      </section-->
-
-  
+    </div> 
       <div class="bg-dark" id="labresultsonline">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Online Lab Results:</h2>
-                    <hr class="light">
-                    <!--p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p-->
+                    <hr class="light"> 
                    <button btn btn-default btn-xl onclick= "document.getElementById('id01').style.display='block'"
-                        style="width:auto;">View Results</button>
-
-                        <div id="id01" class="modal">
-  
+                        style="width:auto;">View Results</button> 
+                        <div id="id01" class="modal"> 
                             <form class="modal-content animate" action="action_page.php">
                                 <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                    <!--img src="img_avatar2.png" alt="Avatar" class="avatar"-->
-                                </div>
-
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> 
+                                </div> 
                                 <div class="container">
                                     <label><b>Patient ID</b></label>
                                     <input type="text" placeholder="Enter Patient ID" name="uname" required>
 
                                     <label><b>Request No.</b></label>
-                                    <input type="text" placeholder="Enter Request No." name="psw" required>
-        
-                                    <button type="submit">Submit</button>
-                                    <!--input type="checkbox" checked="checked"-->
-                                </div>
-
+                                    <input type="text" placeholder="Enter Request No." name="psw" required> 
+                                </div> 
                             <div class="container" style="background-color:#f1f1f1">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                <!--span class="psw"><a href="#">Forgot password?</a></span-->
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+                            	<button type="submit" class="cancelbtn">Submit</button> 
                             </div>
                             </form>
-                        </div>
-                        
+                        </div> 
                 </div>
             </div>
         </div>
-    </div>
-  
-
-
+    </div> 
     <div class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="career.html" class="portfolio-box" onclick="">
+                    <a href="#" class="portfolio-box" onclick="">
                         <img src="img/portfolio2/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                News
                                 </div>
                                 <div class="project-name">
-                                Build Your Career With Us!
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="speciality%20center.html" class="portfolio-box">
+                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio2/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                News
                                 </div>
                                 <div class="project-name">
-                               Cardinal Santos Medical Center Specialty Center
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="workshop.html" class="portfolio-box">
+                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio2/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                News
                                 </div>
                                 <div class="project-name">
-                                Philippine Center for Advanced Surgery Holds First Minimally Invasive Surgery Workshop
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="surgery.html" class="portfolio-box">
+                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio2/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                               News
                                 </div>
                                 <div class="project-name">
-                                 Philippine Center for Advanced Surgery
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="snoring.html" class="portfolio-box">
+                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio2/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                news
                                 </div>
                                 <div class="project-name">
-                                Why snoring is no laughing matter
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="robot.html" class="portfolio-box">
+                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio2/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                News
                                 </div>
                                 <div class="project-name">
-                                CSMC First to Acquire InMotion Robotics Solutions in PH
                                 </div>
                             </div>
                         </div>
@@ -477,29 +321,20 @@ span.psw {
                 </div>
             </div>
         </div>
-    </div>
-   
-  
+    </div> 
     <div class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2 class="section-heading">Cardinal Santos Medical Center:</h2>
-
-                <p>
-                	
+                <h2 class="section-heading">Cardinal Santos Medical Center:</h2> 
+                <p> 
                 	Address:
 					10 Wilson Street, Greenhills West
 					1502 San Juan City
-					Philippines
-					
-
-                </p>
-
+					Philippines 
+                </p> 
             </div>
         </div>
-    </div>
- 
-
+    </div> 
     <aside class="bg-primary" id="contact">
         <div class="container">
             <div class="row">
@@ -508,8 +343,7 @@ span.psw {
                     <p>
                  		Facebook:
                     
-                    	CardinalSantos
-                    
+                    	CardinalSantos          
                     </p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
@@ -518,69 +352,32 @@ span.psw {
                 </div>
                 <div class="col-lg-4 col-lg-offset-0 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><!--a href="mailto:your-email@your-domain.com"-->info@csmc.ph<!--/a--></p>
+                    <p>info@csmc.ph</p>
                 </div>
             </div>
         </div>
-    </aside>
-
-<!--clinical Departments>  
-<div data-role="page" id="pagetwo">
-<div data-role="header">
-<h1>Clinical Departments</h1>
-</div>
-<div data-role="collapsible-set">
-<div data-role="collapsible">
-<h1>Anesthesiology</h1>
-<b>Our practice emphasizes patient safety as well as the highest level of skill in the science and art of Anesthesia. We believe in employing best practices in the delivery of our services.</b></br>
-<br>
-<b>Schedule:</b></br>
-<p> On Call</p>
-<b>Room:</b></br>
-<p>374</p>
-<b>Doctor's Name:</b></br>
-Legaspi, Ferdie B.</br>
-Martinez, Vicente</br>
-Mendoza, Michael</br>
-Pilarta, Napoleon</br>
-</div>
-</div>
-</div-->
-
-
-  
+    </aside> 
     <script src="includes/jquery-1.7.2.min.js"></script>
-    <script src="includes/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
-
+    <script src="includes/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script> 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
+    <script src="js/jquery.js"></script> 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script> 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!--Custom Theme JavaScript-->
-
-    <script src="js/creative.js"></script>
-    
+    <script src="js/wow.min.js"></script> 
+    <!--Custom Theme JavaScript--> 
+    <script src="js/creative.js"></script> 
     <script>
 // Get the modal
-        var modal = document.getElementById('id01');
-
+        var modal = document.getElementById('id01'); 
 // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
-    </script>
-
-
-
-</body>
-
+    </script> 
+</body> 
 </html>
