@@ -31,39 +31,14 @@
     <script src="js/bootstrap.min.js"></script> 
 <style>
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-} 
-h1 {
-    color: red; 
-}
-p.italic {
+p.italic {	
     font-style: italic;
 }
 </style>
 </head>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <!--div class="container-fluid">
-            < Brand and toggle get grouped for better mobile display>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -72,7 +47,7 @@ p.italic {
                     <span class="icon-bar"></span>
                 </button> 
             </div>
-            < Collect the nav links, forms, and other content for toggling>
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right"> 
                     <li>
@@ -86,47 +61,46 @@ p.italic {
                     </li>
                 </ul>
             </div>  
-        </div--> 
+        </div> 
     </nav>  
-<body>                               
-	<div class="bg-dark">    
-		<div class="container"> 
-			<div class="col-lg-12 text-center">
-            	<br>
-            	<br>
-            	<h1>Diagnostics and Therapeutic</h1> 
-                    <p class="italic">Best quality healthcare and excellent patient care have been at the heart of Cardinal Santos Medical Center. With its cutting-edge medical technology, expert physicians, and highly-trained professionals, CSMC provides excellent healthcare and unparalleled patient experience through its array of different services.</p> 
-            	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-                	<!-- Indicators -->
-                	<ol class="carousel-indicators">
-                    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    	<li data-target="#myCarousel" data-slide-to="1"></li>
-                    	<li data-target="#myCarousel" data-slide-to="2"></li>
-                    	<li data-target="#myCarousel" data-slide-to="3"></li>
-                    	<li data-target="#myCarousel" data-slide-to="4"></li>
-                 	</ol> 
-                	<!-- Wrapper for slides -->
-                	<div class="carousel-inner" role="listbox">
-                    	<div class="item active">
-                        	<img src="img/diagnostic/1.jpg" class="img-responsive" alt="">
-                    	</div>
-                		<div class="item">
-                        	<img src="img/diagnostic/2.jpg" class="img-responsive" alt="">    
-                    	</div> 
-                    	<div class="item">
-                        	<img src="img/diagnostic/3.jpg" class="img-responsive" alt="">
-                    	</div>
-                    	<div class="item">
-                        	<img src="img/diagnostic/4.jpg" class="img-responsive" alt="">
-                    	</div>
-                    	<div class="item">
-                        	<img src="img/diagnostic/5.jpg" class="img-responsive" alt="">
-                    	</div>
-                	</div> 
-            	</div>             
-        	</div> 
+<body> 
+	 <header>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+        	<br>
+        	<br>
+        	<h1>Diagnostics and Therapeutic</h1> 
+        	<br>
+        	<!-- Indicators -->
+        	<ol class="carousel-indicators">
+            	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            	<li data-target="#myCarousel" data-slide-to="1"></li>
+        		<li data-target="#myCarousel" data-slide-to="2"></li>
+            	<li data-target="#myCarousel" data-slide-to="3"></li>
+            	<li data-target="#myCarousel" data-slide-to="4"></li>
+        	</ol> 
+        	<!-- Wrapper for slides -->
+        	<div class="carousel-inner" role="listbox">
+            	<div class="item active">
+                	<img src="img/diagnostic/1.jpg" class="img-responsive" alt="">
+            	</div>
+            	<div class="item">
+                	<img src="img/diagnostic/2.jpg" class="img-responsive" alt=""> 
+            	</div> 
+            	<div class="item">
+                	<img src="img/diagnostic/3.jpg" class="img-responsive" alt="">
+            	</div>
+            	<div class="item">
+            		<img src="img/diagnostic/4.jpg" class="img-responsive" alt="">
+            	</div> 
+            	<div class="item">
+            		<img src="img/diagnostic/5.jpg" class="img-responsive" alt="">
+            	</div> 
+          	</div> 
     	</div>
-	</div>  
+            <br>
+				<p class="italic" class="col-lg-4 col-md-8 text-right">Best quality healthcare and excellent patient care have been at the heart of Cardinal Santos Medical Center. With its cutting-edge medical technology, expert physicians, and highly-trained professionals.CSMC provides excellent healthcare and unparalleled patient experience through its array of different services.</p>
+                <br>                              
+	</header>
     <div data-role="collapsible-set">
         <div data-role="collapsible">
             <h1>Bone Densitometry</h1>
@@ -699,6 +673,42 @@ p.italic {
             	}
         	</script>   
 	</div> 
+	</div>  
+    <aside class="bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-dm-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                    <p>
+                        Facebook:
+                    
+                        CardinalSantos          
+                    </p>
+                </div>
+                <div class="col-xs-6 col-dm-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>(+632) 727 0001</p>
+                </div>
+                <div class="col-xs-6 col-dm-offset-0 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>info@csmc.ph</p>
+                </div>
+            </div>
+        </div>
+    
+    </aside>
+    <script src="includes/jquery-1.7.2.min.js"></script>
+    <script src="includes/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script> 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script> 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script> 
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script> 
+    <!--Custom Theme JavaScript--> 
+    <script src="js/creative.js"></script> 
 </body>
 </html>
 
