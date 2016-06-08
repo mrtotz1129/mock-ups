@@ -150,7 +150,10 @@ span.psw {
                         <a class="page-scroll" href="#services">Services</a>
                     </li> 
                     <li>
-                        <a class="page-scroll" href="#labresultsonline">Lab Results Online</a>
+                        <a class="page-scroll" href="#labresultsonline">Searches</a>
+                    </li> 
+                    <li>
+                        <a class="page-scroll" href="#portfolio">News</a>
                     </li> 
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -211,7 +214,7 @@ span.psw {
       <div class="bg-dark" id="labresultsonline">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-6 col-md-10-offset-2 text-center">
                     <h2 class="section-heading">Online Lab Results:</h2>
                     <hr class="light"> 
                    <button btn btn-default btn-xl onclick= "document.getElementById('id01').style.display='block'"
@@ -235,85 +238,129 @@ span.psw {
                             </form>
                         </div> 
                 </div>
+                <div class="col-lg-6 col-md-10-offset-2 text-center">
+                    <h2 class="section-heading">Find a Doctor:</h2>
+                    <hr class="light">
+                    <button btn btn-default btn-xl onclick= "document.getElementById('id02').style.display='block'"
+                        style="width:auto;">Find</button>
+
+                        <div id="id02" class="modal">
+  
+                            <form class="modal-content animate" action="action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <!--img src="img_avatar2.png" alt="Avatar" class="avatar"-->
+                                </div>
+
+                                <div class="container">
+                                    <label><b>Name</b></label>
+                                    <input type="text" placeholder="First name or Last Name" name="n" id="n" required>
+
+                                    <label><b>Specialization</b></label>
+                                    <input type="text" placeholder="Any Specialization" name="sp" id="sp" required>
+                                    <a href="" class ="btn btn-default btn-x1" type="search" name="Search" value="Search">Search</a>
+                                    <!--input type="checkbox" checked="checked"-->
+                                </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                <!--span class="psw"><a href="#">Forgot password?</a></span-->
+                            </div>
+                            </form>
+
+                        </div>
+                </div>
             </div>
         </div>
     </div> 
     <div class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" onclick="">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="career.html" class="portfolio-box" onclick="">
                         <img src="img/portfolio2/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                                News
                                 </div>
                                 <div class="project-name">
+                                Build Your Career With Us!
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="speciality%20center.html" class="portfolio-box">
                         <img src="img/portfolio2/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                                News
                                 </div>
                                 <div class="project-name">
+                               Cardinal Santos Medical Center Specialty Center
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="workshop.html" class="portfolio-box">
                         <img src="img/portfolio2/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                                News
                                 </div>
                                 <div class="project-name">
+                                Philippine Center for Advanced Surgery Holds First Minimally Invasive Surgery Workshop
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="surgery.html" class="portfolio-box">
                         <img src="img/portfolio2/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                               News
                                 </div>
                                 <div class="project-name">
+                                 Philippine Center for Advanced Surgery
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="snoring.html" class="portfolio-box">
                         <img src="img/portfolio2/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                                news
                                 </div>
                                 <div class="project-name">
+                                Why snoring is no laughing matter
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-xs-4 col-dm-6">
+                    <a href="robot.html" class="portfolio-box">
                         <img src="img/portfolio2/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
+                                News
                                 </div>
                                 <div class="project-name">
+                                CSMC First to Acquire InMotion Robotics Solutions in PH
                                 </div>
                             </div>
                         </div>
@@ -321,7 +368,7 @@ span.psw {
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
